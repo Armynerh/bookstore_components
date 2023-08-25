@@ -1,14 +1,13 @@
-<a name="readme-top"></a>
-
 <div align="center">
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
 
-<!-- MAIN HEADING -->
 
-  <h3><b>Awesome Books Project</b></h3>
+  <h3><b>Bookstore Components</b></h3>
 
 </div>
 
 <!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -28,144 +27,132 @@
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- INTRO -->
-# 📖 Portfolio <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-> This is an Awasome Book project built with JavaScript ES6 
+# 📖 Bookstore Coponents <a name="about-project"></a>
+
+
+**[Bookstore Components]**  is a project to consolidate your knowledge about React, components, props, state, and hooks, by building a react bookstore CMS
 
 ## 🛠 Built With <a name="built-with"></a>
-1. HTML
-2. Linters
-3. JavaScript
+
 ### Tech Stack <a name="tech-stack"></a>
 
-> This is a version with both view Desktop and Mobile Version
+>React Js
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">HTML</a></li>
-    <li><a href="https://reactjs.org/">Linters</a></li>
-    <li><a href="https://reactjs.org/">Javascript</a></li>
-  </ul>
-</details>
+
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> - Added Linters
-> - Added HTML
-> - Added Javascript
-> - Added HTML syntx from JS
+- **Add Book**
+- **Remove Book**
+- **Edit Book**
+- **Delete Book**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo" target="_blank"></a>
 
-- [Live Demo Link will be added shortly]()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Follow the step bellow to get the project localy.
+
+To get a local copy up and running, follow these steps.
+
 ### Prerequisites
 
-1. A Browser (Preferably Google Chrome)
-2. A Code Editor
-3. Internet Connection
-4. Git
+In order to run this project you need node package manager<br>
 
-<!-- SETUP -->
+
+ npm install 
+
+
 ### Setup
 
-Clone this repository to your desired folder using:
+Clone this repository to your desired folder:
 
-```sh
-  cd my-folder
-  git https://github.com/Armynerh/awesome_books-es6.git
-```
-<!-- INSTALL -->
+
+  cd my-folder<br>
+ `git clone https://github.com/Armynerh/bookstore_components`
+
+
 
 ### Install
 
-Make sure you install this project with the latest version of Git and a code editor (VS is goog).
+Install this project with:<br>
+
+  npm install
+
 
 ### Usage
 
-To run the project, execute the following command:
+To run the project, execute the following command:<br>
 
-Browser up your project folder location, once there type the following command using your terminal ### code . all the project files will open and VS.
+
+  npm run dev
+
 
 ### Deployment
 
-You can deploy this project using:
->1.  A Code Editor
->2. Latest version of Git
+You can deploy this project using github page deployment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Kenny Henshaw**
 
 - GitHub: [@armynerh](https://github.com/Armynerh)
-- LinkedIn: [@Kehinde](https://www.linkedin.com/in/kehinde-aminah-h/)
+- LinkedIn: [@Kehinde-Aminah](https://www.linkedin.com/in/kehinde-aminah-h/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Nice Design**
-
+- [ ] **Add Categories**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTION -->
+<!-- CONTRIBUTING -->
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
+Feel free to check the [issues page](https://github.com/Armynerh/javascript-capstone/issues/).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!--SUPPORT -->
+<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> If you like this project, please give it some starts ⭐️⭐️⭐️⭐️⭐️
+
+If you like this project Give Me a Star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Special acknowledgement to [@microverseinc](https://github.com/microverseinc)
+
+I would like to thank Microverse for the learning Experience
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQS -->
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **How were the Linters utilised?**
-
-  - The Linters were used with the help of resources provided by [@microverseinc](https://github.com/microverseinc).
-  
-
-- **What new features should be expected in the next release of the project?**
-
-  - In a short period **Live Demos**. will be added
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
 
