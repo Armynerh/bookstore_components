@@ -137,3 +137,9 @@ input {
 ::placeholder {
   padding-left: 20px;
 }
+
+.btn {
+  border: none;
+  text-decoration: none;
+  color: #f5f6fa;
+}
