@@ -10,6 +10,5 @@ const categoriesSlice = createSlice({
     checkStatus: () => 'Under construction',
   },
 });
-console.log(categoriesSlice);
 export const { checkStatus } = categoriesSlice.actions;
 export default categoriesSlice.reducer;
