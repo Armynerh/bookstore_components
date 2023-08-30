@@ -1,41 +1,21 @@
-import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import loading from './loading.png';
 import AddBook from './Addbook';
+import { removeBook } from '../redux/books/booksSlice';
 
 const BooksList = () => {
-  const [books] = useState([
-    {
-      id: uuidv4(),
-      title: 'The Hunger Games',
-      author: 'Suzanne Collins',
-      category: 'Action ',
-      percentage: '64% ',
-      chapter: 'Chapter 17',
-    },
-    {
-      id: uuidv4(),
-      title: 'Dune',
-      author: 'Frank Herbert',
-      category: 'Science Fiction',
-      percentage: '8% ',
-      chapter: 'Chapter 13: "A Lesson Learned"',
-    },
-    {
-      id: uuidv4(),
-      title: 'Capital In The Twenty-First Century',
-      author: 'Suzzane Collins',
-      category: 'Economy',
-      percentage: '0%',
-      chapter: 'Introduction',
-    },
-  ]);
+  const books = useSelector((state) => state.books);
+  const dispatch = useDispatch();
+  const handleRemove = (id) => {
+    dispatch(removeBook(id));
+  };
   return (
     <>
 
       <ul>
         {books.map((book) => (
-          <li key={book.id} className="">
+          <li key={book.item_id} className="">
             <div className="booklist auto flex">
               <div className="list cat">
                 <div className="bookItem">
@@ -45,21 +25,21 @@ const BooksList = () => {
                 </div>
                 <div className="bookItem">
                   <span className="spanItem color1 p2">Comment</span>
-                  <span className="spanItem color1 p2">Remove</span>
+                  <button type="submit" className="spanItem color1 p2 btn" onClick={() => handleRemove(book.item_id)}>Remove</button>
                   <span className="spanItem borderless color1 p2">Edit</span>
                 </div>
               </div>
               <div className="list flex load">
                 <img src={loading} alt="loading" />
                 <p>
-                  {book.percentage}
+                  40%
                   <br />
                   completed
                 </p>
               </div>
               <div className="list">
                 <p className="p4">CURRENT CHAPTER</p>
-                <p className="p5">{book.chapter}</p>
+                <p className="p5">7</p>
                 <button type="submit">UPDATE PROGRESS</button>
               </div>
             </div>
