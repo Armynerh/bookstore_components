@@ -17,11 +17,7 @@ const BooksList = () => {
   }, [status, dispatch]);
 
   const handleRemove = async (id) => {
-    try {
-      dispatch(removeBook(id));
-    } catch (e) {
-      console.error(e);
-    }
+    dispatch(removeBook(id));
   };
   if (status === 'loading') {
     return <div>Loading...</div>;
