@@ -1,21 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import loading from './loading.png';
 import AddBook from './Addbook';
-import { removeBook } from '../redux/books/booksSlice';
+import { fetchBooks, removeBook } from '../redux/books/booksSlice';
 
 const BooksList = () => {
-  const books = useSelector((state) => state.books);
+  const books = useSelector((state) => state.books.books);
   const dispatch = useDispatch();
-  const handleRemove = (id) => {
+  const status = useSelector((state) => state.books.status);
+  const error = useSelector((state) => state.books.error);
+
+  useEffect(() => {
+    if (status === 'idle') {
+      dispatch(fetchBooks());
+    }
+  }, [status, dispatch]);
+
+  const handleRemove = async (id) => {
     dispatch(removeBook(id));
   };
+  if (status === 'loading') {
+    return <div>Loading...</div>;
+  }
+
+  if (status === 'books/fetchBooks/failed') {
+    return (
+      <div>
+        Error:
+        {error}
+      </div>
+    );
+  }
+
   return (
     <>
-
       <ul>
         {books.map((book) => (
-          <li key={book.item_id} className="">
+          <li key={book.id} className="">
             <div className="booklist auto flex">
               <div className="list cat">
                 <div className="bookItem">
@@ -25,7 +46,7 @@ const BooksList = () => {
                 </div>
                 <div className="bookItem">
                   <span className="spanItem color1 p2">Comment</span>
-                  <button type="submit" className="spanItem color1 p2 btn" onClick={() => handleRemove(book.item_id)}>Remove</button>
+                  <button type="submit" className="spanItem color1 p2 btn" onClick={() => handleRemove(book.id)}>Remove</button>
                   <span className="spanItem borderless color1 p2">Edit</span>
                 </div>
               </div>
