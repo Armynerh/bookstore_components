@@ -7,11 +7,11 @@ const AddBook = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
   const [author, setAuthor] = useState('');
-  const [category, setCategory] = useState('');
 
   const handleAddbook = async (event) => {
     try {
       const id = uuidV4();
+      const category = 'Fiction';
       const newBook = {
         title,
         author,
@@ -25,15 +25,15 @@ const AddBook = () => {
     } finally {
       setTitle('');
       setAuthor('');
-      setCategory('');
     }
   };
   return (
     <div className="flex formInput">
       <form className="auto">
+        <div className="formhead"><h2>ADD NEW BOOK</h2></div>
+        <br />
         <input type="text" placeholder="Book Title." value={title} onChange={(event) => setTitle(event.target.value)} />
         <input type="text" placeholder="Author." value={author} onChange={(event) => setAuthor(event.target.value)} />
-        <input type="text" placeholder="category" value={category} onChange={(event) => setCategory(event.target.value)} />
         <button type="submit" onClick={handleAddbook}>ADD BOOK</button>
       </form>
     </div>
