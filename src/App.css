@@ -1,10 +1,10 @@
 body {
-  background-color: #e5e9f7;
+  background-color: #fafafa;
 }
 
 nav {
-  width: 70%;
-  padding-left: 85px;
+  width: 90%;
+  padding-left: 95px;
 }
 
 ul {
@@ -40,6 +40,7 @@ form {
 .bookItem .p2 {
   font-size: medium;
   font-weight: 400;
+  margin: 0;
 }
 
 input {
@@ -86,18 +87,19 @@ input {
 
 .nav-item,
 .bookItem {
-  margin: 15px;
-  padding: 5px;
+  margin: 10px;
+  padding: 1px;
 }
 
 .spanItem {
-  margin: 5px;
+  margin: 15px 0;
   border-right: 1px solid #e8e8e8;
   padding: 5px;
 }
 
 .borderless {
-  border: none;
+  border-left: 1px solid #e8e8e8;
+  border-right: none;
 }
 
 .load {
@@ -108,6 +110,8 @@ input {
 
 .list.cat {
   text-align: start;
+  margin: 0 1px;
+  padding: 20px;
 }
 
 .color1 {
@@ -141,5 +145,20 @@ input {
 .btn {
   border: none;
   text-decoration: none;
-  color: #f5f6fa;
+  background-color: #fff;
+}
+
+.avatar {
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.avatar img {
+  width: 5%;
+}
+
+.formhead h2 {
+  margin-bottom: 0;
+  margin-left: 2px;
+  color: #8c8c8c;
 }

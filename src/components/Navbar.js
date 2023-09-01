@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import avatar from './avatar.png';
 
 const links = [
   { path: '/', text: 'BOOKS' },
@@ -16,6 +17,9 @@ const Navbar = () => (
           </li>
         ))}
       </ul>
+      <div className="flex avatar">
+        <img src={avatar} alt="avatar" />
+      </div>
     </nav>
   </div>
 
